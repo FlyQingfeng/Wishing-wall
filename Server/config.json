@@ -1,0 +1,13 @@
+{
+    "server":{
+        "host":"127.0.0.1",
+        "port":8080
+    },
+    "mysql":{
+        "host":"127.0.0.1",
+        "user":"root",
+        "pass":"123456",
+        "database":"wishingwall",
+        "port":3306
+    }
+}

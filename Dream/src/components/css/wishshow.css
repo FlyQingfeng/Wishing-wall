@@ -1,0 +1,368 @@
+.container {
+    display: flex;
+    font-family: "Gochi Hand", cursive;
+    color: #333;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 1em;
+    border-right: 1px solid #ccc;
+    box-shadow:0 0 10px 10px #ffffff;
+    background-color: #c1e5f7;
+    border-radius: 5px;
+}
+
+.main-content {
+    width: 75%;
+    padding: 1em;
+    background-color: #f7d3c1;
+    position: relative;
+}
+.main-content h1 {
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 0 5px 4px #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-content .comment-box {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+    background-color: #f6f6f62d;
+}
+
+.main-content .comment-box textarea {
+    width: 90%;
+    height: 50px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.wish-scroll-list{
+    margin: 10px;
+    height: 60vh;
+    overflow-y: scroll;
+    list-style: none;
+}
+/* 修改滚动条的宽度 */
+.wish-scroll-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* 修改滚动条的背景色 */
+.wish-scroll-list::-webkit-scrollbar-track {
+    margin-top: 40px;
+    background-color: #c1e5f7;
+}
+
+/* 修改滚动条的滑块颜色 */
+.wish-scroll-list::-webkit-scrollbar-thumb {
+    background: #f7d3c1;
+}
+
+/* 修改滚动条的滑块颜色（鼠标悬停时） */
+.wish-scroll-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.gohomebtn{
+    margin: 15px;
+    padding: 5px;
+    border-style: none;
+    display: block;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+}
+
+.gohomebtn:hover{
+    display: block;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #cab7b5;
+}
+
+
+.scroll-list {
+    margin: 20px;
+    height: 51vh;
+    overflow-y: scroll;
+    list-style: none;
+}
+
+/* 修改滚动条的宽度 */
+.scroll-list::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f7d3c1;
+}
+
+/* 修改滚动条的背景色 */
+.scroll-list::-webkit-scrollbar-track {
+    background-color: #f7d3c1;
+}
+
+/* 修改滚动条的滑块颜色 */
+.scroll-list::-webkit-scrollbar-thumb {
+    background: #007bfd;
+}
+
+/* 修改滚动条的滑块颜色（鼠标悬停时） */
+.scroll-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.main-content .comment-box button {
+    width: 10%;
+    height: 50px;
+    margin: auto 20px;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #333;
+}
+
+
+.title {
+    font-size: 60px;
+    text-align: center;
+    border-bottom: 2px solid #666;
+    text-shadow: 5px 5px 5px #66666671;
+    color: #333;
+}
+
+.sub-title {
+    text-align: center;
+    color: #333;
+    
+}
+.comments-top{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.comments-top button{
+    margin-left: 50px;
+    text-align: center;
+    border-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f7d3c1;
+    /* right: 0; */
+    text-align: center;
+    border-radius: 50%;
+    color: #333;
+}
+.comments-top button:hover{
+    background-color: #936781;
+}
+.comments-top button img{
+    width: auto;
+    height: 40px;
+}
+
+.comments-title,
+.comments-sub-title {
+    text-align: left;
+    color: #333;
+}
+.wish-list{
+    overflow-y: auto;
+}
+
+.wish-list-top {
+    display: flex;
+}
+
+.wish-list-top .makewishbtn {
+    border-style: none;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* right: 0; */
+    text-align: center;
+    background-color: #f7d3c1a0;
+    border-radius: 10px;
+    color: #333;
+}
+.wish-list-top .makewishbtn:hover {
+    background-color: #f7d3c1;
+}
+.name {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0 20px;
+}
+
+.idcode {
+    font-size: 1em;
+    color: #666;
+    margin: 20px 20px;
+}
+
+.wish-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.wish-list ul li {
+    display: flex;
+    background-color: #6666663b;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-left: #333 15px solid;
+    box-shadow: 10px 0 5px #33333353;
+    justify-content: space-between;
+}
+
+.wish-item:hover .delete-button {
+    display: block;
+    border-radius: 5px;
+    color: white;
+    /* White text */
+    font-size: 16px;
+    /* Increase font size */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    background-color: #f44336;
+    /* Red background */
+}
+
+
+
+.delete-button {
+    display: none;
+
+}
+
+.delete-button:hover {
+    background-color: #da190b;
+    /* Darker red background on hover */
+}
+
+.wish-item {
+    cursor: pointer;
+    padding: 0.5em 0;
+}
+
+.wish-item:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.comment {
+    background-color: #66666630;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px 0px;
+    margin: 5px 0;
+}
+
+.description{
+    margin-left: 20px;
+    font-size: 1em;
+    color: #666;
+}
+.comment-text{
+    margin-left: 30px;
+    font-size: 1em;
+    color: #666;
+}
+.comment-date {
+    text-align: right;
+    margin-right: 40px;
+    font-size: 1em;
+    color: #666;
+}
+
+.comment-name-text {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1em;
+    color: #1341e5;
+}
+
+.wish-page {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wish-card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background-color: #514f5033;
+}
+
+.wish-page h1 {
+    font-size: 70px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wish-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-area {
+    margin-top: 20px;
+    width: 300px;
+}
+
+.input-area textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.confirm-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px silver solid;
+}
+.details-text{
+    margin: 0 45px;
+}
